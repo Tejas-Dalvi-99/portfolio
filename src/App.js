@@ -7,12 +7,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Cursor from "./components/Cursor";
 
-// CREATE MOUSE FOLLOWER FOR THE PORTFOLIO
-// CREATE MOUSE FOLLOWER FOR THE PORTFOLIO
-// CREATE MOUSE FOLLOWER FOR THE PORTFOLIO
-// CREATE MOUSE FOLLOWER FOR THE PORTFOLIO
-// CREATE MOUSE FOLLOWER FOR THE PORTFOLIO
-
 function App() {
   return (
     <div className="App">
