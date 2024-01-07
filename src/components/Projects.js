@@ -10,7 +10,7 @@ function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="project-card circleBig"
+        className="project-card dotBig"
       >
         <p>Work in Progress</p>
       </motion.div>
@@ -19,7 +19,7 @@ function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="project-card circleBig"
+        className="project-card dotBig"
       >
         <p>Work in Progress</p>
       </motion.div>
@@ -28,7 +28,7 @@ function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="project-card circleBig"
+        className="project-card dotBig"
       >
         <p>Work in Progress</p>
       </motion.div>
@@ -37,7 +37,7 @@ function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="project-card circleBig"
+        className="project-card dotBig"
       >
         <p>Work in Progress</p>
       </motion.div>
@@ -46,7 +46,7 @@ function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="project-card circleBig"
+        className="project-card dotBig"
       >
         <p>Work in Progress</p>
       </motion.div>
@@ -55,7 +55,7 @@ function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="project-card circleBig"
+        className="project-card dotBig"
       >
         <p>Work in Progress</p>
       </motion.div>

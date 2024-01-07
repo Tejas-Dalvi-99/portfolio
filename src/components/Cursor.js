@@ -13,6 +13,7 @@ function Cursor() {
         const dot = document.getElementById('dot');
         const circleBig = document.querySelectorAll('.circleBig');
         const noCircle = document.querySelectorAll('.noCircle');
+        const dotBig = document.querySelectorAll('.dotBig');
 
         const onMouseMove = (event)=>{
             const {clientX, clientY} =  event; 
@@ -30,6 +31,10 @@ function Cursor() {
                 gsap.to(cursor, {scale:0})
                 gsap.to(dot, {scale:1})
             }
+            if(circleBig.classList.contains('dotBig')){
+                gsap.to(cursor, {scale:0})
+                gsap.to(dot, {scale:6})
+            }
         }
 
         const onMouseLeaveText = ()=>{
@@ -45,6 +50,10 @@ function Cursor() {
         noCircle.forEach((noCircle)=>{
             noCircle.addEventListener('mouseenter', onMouseEnterText)
             noCircle.addEventListener('mouseleave', onMouseLeaveText)
+        })
+        dotBig.forEach((dotBig)=>{
+            dotBig.addEventListener('mouseenter', onMouseEnterText)
+            dotBig.addEventListener('mouseleave', onMouseLeaveText)
         })
     },[queryParameters])
     
