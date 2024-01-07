@@ -12,7 +12,9 @@ import {
 import { SiMui } from "react-icons/si";
 import { SiSolidity } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import { SiGreensock } from "react-icons/si";
 import { motion } from "framer-motion";
+import { FiFramer } from "react-icons/fi";
 
 function Skills() {
   return (
@@ -41,6 +43,14 @@ function Skills() {
       <SkillBox
         icon={<FaBootstrap size={50} color="#563d7c" />}
         name={"Bootstrap"}
+      />
+      <SkillBox
+        icon={<FiFramer size={50} color="#000" />}
+        name={"Framer Motion"}
+      />
+      <SkillBox
+        icon={<SiGreensock size={50} color="#00A300" />}
+        name={"GSAP"}
       />
     </div>
   );
