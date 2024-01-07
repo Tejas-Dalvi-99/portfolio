@@ -75,7 +75,13 @@ function Navbar() {
             </motion.div>
       </div>
 
-      {/* <div className={`hidden ${navOpen ? "secret" : ""}`}></div> */}
+      <div
+      className={`hidden ${navOpen ? "secret" : ""}`}>
+        <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/')}}>Home</div>
+        <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/projects')}}>Projects</div>
+        <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/skills')}}>Skills</div>
+        <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/contact')}}>Contact</div>
+      </div>
 
     </div>
   );

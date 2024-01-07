@@ -1,5 +1,98 @@
 .contact{
-    height: 100%;
+    margin-top: 6vh;
+    width: 40vw;
+    display: flex;
     align-items: center;
-    border: 2px solid violet;
+    justify-content: center;
+    /* border: 2px solid violet; */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.form{
+    box-sizing: border-box;
+    padding: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 5vh;
+    width: 17vw;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid #FFE7C5;
+    transition: ease-in-out 0.5s;
+}
+
+input:focus{
+    border: 3px solid #FE8D59;
+}
+
+.message-box{
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 30vh;
+    width: 35vw;
+    resize: none;
+    border-radius: 10px;
+    border: 3px solid #FFE7C5;
+    outline: none;
+    transition: ease-in-out 0.5s;
+}
+
+.message-box:focus{
+    border: 3px solid #FE8D59;
+}
+
+.btn{
+    height: 5vh;
+    width: 7vw;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #FE8D59;
+    transition: ease-in-out 0.3s;
+    font-weight: bold;
+    color: #4D4637;
+}
+
+.btn:hover{
+    background-color: #FE8D59;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .contact{
+        margin-top: 3vh;
+        width: 80vw;
+    }
+
+    .form{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .message-box{
+        width: 100%;
+    }
+
+    .btn{
+        width: 25vw;
+        background-color: #FE8D59;
+        color: white;
+    }
 }

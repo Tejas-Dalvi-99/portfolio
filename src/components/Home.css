@@ -54,16 +54,34 @@
 @media (max-width:768px) {
     .home{
         flex-direction: column-reverse;
+        justify-content:flex-end;
+        gap: 20px;
     }
 
     .introduction{
         line-height: 25px;
-        font-size: 3vw;
+        font-size: 2.5vw;
         width: 80%;
+        height: 40%;
     }
 
     .coder-image{
         height: 50%;
         width: 70%;
+    }
+}
+
+
+@media (max-width:600px){
+    .home{
+       gap: 50px;
+    }
+
+    .introduction{
+        font-size: 3.4vw;
+    }
+
+    .coder-image{
+        height: 40%;
     }
 }

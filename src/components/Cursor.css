@@ -31,3 +31,24 @@
     align-items: center;
     background-color: rgba(254, 141, 89, 0.7);
 }
+
+.cursor-text{
+    display: none; 
+    font-size: 3px; 
+    background-color: transparent;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .custom-cursor{
+        display: none;
+    }
+
+    .cursor-text{
+        display: none;
+    }
+
+    .dot{
+        display: none;
+    }
+}

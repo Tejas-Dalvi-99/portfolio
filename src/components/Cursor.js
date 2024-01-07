@@ -9,6 +9,7 @@ function Cursor() {
     const queryParameters = useSearchParams()
 
     useEffect(()=>{
+        const cursorText = document.querySelector('.cursor-text')
         const cursor = document.getElementById('custom-cursor');
         const dot = document.getElementById('dot');
         const circleBig = document.querySelectorAll('.circleBig');
@@ -34,12 +35,14 @@ function Cursor() {
             if(circleBig.classList.contains('dotBig')){
                 gsap.to(cursor, {scale:0})
                 gsap.to(dot, {scale:6})
+                cursorText.style.display = 'block'
             }
         }
 
         const onMouseLeaveText = ()=>{
             gsap.to(cursor, {scale:1})
             gsap.to(dot, {scale:1})
+            cursorText.style.display = 'none'
         }
 
         document.addEventListener('mousemove', onMouseMove)
@@ -61,7 +64,9 @@ function Cursor() {
   return (
     <>
     <div id='custom-cursor' className='custom-cursor'></div>
-     <div id='dot' className='dot'></div>
+     <div id='dot' className='dot'>
+        <span className='cursor-text'>Click to View</span>
+     </div>
     </>
   )
 }
