@@ -44,43 +44,47 @@ function Cursor() {
   const cursorTextRef = useRef(null);
 
   useEffect(() => {
-    document.addEventListener('mousemove', onMouseMove.current);
-
+    const onMouseMoveHandler = onMouseMove.current;
+    const onMouseEnterHandler = onMouseEnterText.current;
+    const onMouseLeaveHandler = onMouseLeaveText.current;
+  
+    document.addEventListener('mousemove', onMouseMoveHandler);
+  
     const circleBigElements = document.querySelectorAll('.circleBig');
     const noCircleElements = document.querySelectorAll('.noCircle');
     const dotBigElements = document.querySelectorAll('.dotBig');
-
+  
     circleBigElements.forEach((element) => {
-      element.addEventListener('mouseenter', onMouseEnterText.current);
-      element.addEventListener('mouseleave', onMouseLeaveText.current);
+      element.addEventListener('mouseenter', onMouseEnterHandler);
+      element.addEventListener('mouseleave', onMouseLeaveHandler);
     });
-
+  
     noCircleElements.forEach((element) => {
-      element.addEventListener('mouseenter', onMouseEnterText.current);
-      element.addEventListener('mouseleave', onMouseLeaveText.current);
+      element.addEventListener('mouseenter', onMouseEnterHandler);
+      element.addEventListener('mouseleave', onMouseLeaveHandler);
     });
-
+  
     dotBigElements.forEach((element) => {
-      element.addEventListener('mouseenter', onMouseEnterText.current);
-      element.addEventListener('mouseleave', onMouseLeaveText.current);
+      element.addEventListener('mouseenter', onMouseEnterHandler);
+      element.addEventListener('mouseleave', onMouseLeaveHandler);
     });
-
+  
     return () => {
-      document.removeEventListener('mousemove', onMouseMove.current);
-
+      document.removeEventListener('mousemove', onMouseMoveHandler);
+  
       circleBigElements.forEach((element) => {
-        element.removeEventListener('mouseenter', onMouseEnterText.current);
-        element.removeEventListener('mouseleave', onMouseLeaveText.current);
+        element.removeEventListener('mouseenter', onMouseEnterHandler);
+        element.removeEventListener('mouseleave', onMouseLeaveHandler);
       });
-
+  
       noCircleElements.forEach((element) => {
-        element.removeEventListener('mouseenter', onMouseEnterText.current);
-        element.removeEventListener('mouseleave', onMouseLeaveText.current);
+        element.removeEventListener('mouseenter', onMouseEnterHandler);
+        element.removeEventListener('mouseleave', onMouseLeaveHandler);
       });
-
+  
       dotBigElements.forEach((element) => {
-        element.removeEventListener('mouseenter', onMouseEnterText.current);
-        element.removeEventListener('mouseleave', onMouseLeaveText.current);
+        element.removeEventListener('mouseenter', onMouseEnterHandler);
+        element.removeEventListener('mouseleave', onMouseLeaveHandler);
       });
     };
   }, [location]);
