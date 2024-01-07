@@ -7,8 +7,8 @@ function Projects() {
     <div className="projects">
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
         className="project-card dotBig"
       >
@@ -16,8 +16,8 @@ function Projects() {
       </motion.div>
       
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
         className="project-card dotBig"
       >
@@ -25,8 +25,8 @@ function Projects() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
         className="project-card dotBig"
       >
@@ -34,8 +34,8 @@ function Projects() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
         className="project-card dotBig"
       >
@@ -43,8 +43,8 @@ function Projects() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
         className="project-card dotBig"
       >
@@ -52,8 +52,8 @@ function Projects() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
         className="project-card dotBig"
       >
