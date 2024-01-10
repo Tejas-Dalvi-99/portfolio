@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useState , useRef } from "react";
 import "./Contact.css";
 import { Flip, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
-
+import emailjs from '@emailjs/browser';
 
 function Contact() {
 
   const [name , setName] = useState('');
   const [email , setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const form = useRef();
+
+  const serviceID = process.env.REACT_APP_YOUR_SERVICE_ID ; 
+  const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID ; 
+  const publicKey = process.env.REACT_APP_YOUR_PUBLIC_KEY ;
 
   function handleChangeName(e){
     setName(e.target.value)
@@ -23,6 +28,12 @@ function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    emailjs.sendForm(serviceID, templateId, form.current, publicKey)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
     toast.success("Thank you for the Feeback !", {
       position: "top-center",
       autoClose: 1000,
@@ -47,10 +58,11 @@ function Contact() {
         className="contact"
       >
         <h1>Contact</h1>
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" ref={form} onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Name"
+            name="user_name"
             value={name}
             onChange={handleChangeName}
             className="noCircle field"
@@ -58,6 +70,7 @@ function Contact() {
           <input
             type="email"
             placeholder="example@email.com"
+            name="user_email"
             value={email}
             onChange={handleChangeEmail}
             className="noCircle field"
@@ -65,6 +78,7 @@ function Contact() {
           />
           <textarea
             placeholder="Message"
+            name="message"
             value={message}
             onChange={handleChangeMessage}
             className="message-box noCircle field"
