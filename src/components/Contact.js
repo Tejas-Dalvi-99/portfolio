@@ -29,11 +29,11 @@ function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
     emailjs.sendForm(serviceID, templateId, form.current, publicKey)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+      // .then((result) => {
+      //     console.log(result.text);
+      // }, (error) => {
+      //     console.log(error.text);
+      // });
     toast.success("Thank you for the Feeback !", {
       position: "top-center",
       autoClose: 1000,
