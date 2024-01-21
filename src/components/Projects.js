@@ -7,10 +7,12 @@ import certificate from '../Images/certificates.png'
 import todo from '../Images/cheemdiya list.png'
 import complaint from '../Images/complaint chain.png'
 import research from '../Images/research tool.png'
+import ghoEco from '../Images/gho eco cover image.png'
 
 function Projects() {
   return (
     <div className="projects">
+      <ProjectCard name={"Gho-Eco"} img={ghoEco} link={"http://ghoeco.netlify.app/"} description={"Gho-Eco is a platform where we invite organizations from across the globe to showcase their eco-friendly initiatives. The best entries get rewarded with GHO Tokens as an appreciation"}/>
       <ProjectCard name={"Certificates Page"} img={certificate} link={"https://tejascertificates.netlify.app/"} description={"Created a website where All of my personal certificates are displayed."}/>
       <ProjectCard name={"Cheemdiya List"} img={todo} link={"https://cheemdiyalist.netlify.app/"} description={"A To-Do list app"}/>
       <ProjectCard name={"Complaint Chain"} img={complaint} link={"http://complaintchain.tech/"} description={"Blockchain based Anonymous Complaining app where users can send complaints anonymously. The complaints are viewed by the respective authorities on the admin page. The admins can login through NFT Gating mechanism to access the admin page. (Note:- please install metamask wallet browser extension before using the project)"}/>
