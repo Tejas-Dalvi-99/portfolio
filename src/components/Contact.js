@@ -1,4 +1,4 @@
-import React, { useState , useRef } from "react";
+import React, { useState , useRef, useEffect } from "react";
 import "./Contact.css";
 import { Flip, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,6 +11,7 @@ function Contact() {
   const [email , setEmail] = useState('');
   const [message, setMessage] = useState('');
   const form = useRef();
+  const inputEl = useRef(null);
 
   const serviceID = process.env.REACT_APP_YOUR_SERVICE_ID ; 
   const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID ; 
@@ -29,11 +30,6 @@ function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
     emailjs.sendForm(serviceID, templateId, form.current, publicKey)
-      // .then((result) => {
-      //     console.log(result.text);
-      // }, (error) => {
-      //     console.log(error.text);
-      // });
     toast.success("Thank you for the Feeback !", {
       position: "top-center",
       autoClose: 1000,
@@ -49,6 +45,10 @@ function Contact() {
     setMessage('')
   }
 
+  useEffect(()=>{
+    inputEl.current.focus();
+  },[])
+
   return (
     <>
       <motion.div
@@ -62,6 +62,7 @@ function Contact() {
           <input
             type="text"
             placeholder="Name"
+            ref={inputEl}
             name="user_name"
             value={name}
             onChange={handleChangeName}
