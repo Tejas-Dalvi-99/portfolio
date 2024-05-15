@@ -67,6 +67,16 @@ function Navbar() {
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
+              transition={{ ease: "easeInOut", duration: 2, times: [0.6] }}
+              className="link noCircle"
+              onClick={()=>navigateTo('/socials')}
+            >
+              Socials
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ ease: "easeInOut", duration: 2, times: [0.5] }}
               className="link noCircle"
               onClick={()=>navigateTo('/contact')}

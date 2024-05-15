@@ -15,6 +15,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiGreensock } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FiFramer } from "react-icons/fi";
+import { SiTailwindcss } from "react-icons/si";
 
 function Skills() {
   return (
@@ -51,6 +52,10 @@ function Skills() {
       <SkillBox
         icon={<SiGreensock size={50} color="#00A300" />}
         name={"GSAP"}
+      />
+      <SkillBox
+        icon={<SiTailwindcss size={50} color="#06B6D4" />}
+        name={"Tailwind CSS"}
       />
     </div>
   );
