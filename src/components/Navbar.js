@@ -90,6 +90,7 @@ function Navbar() {
         <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/')}}>Home</div>
         <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/projects')}}>Projects</div>
         <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/skills')}}>Skills</div>
+        <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/socials')}}>Socials</div>
         <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/contact')}}>Contact</div>
       </div>
 

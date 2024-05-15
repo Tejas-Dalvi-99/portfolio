@@ -57,11 +57,11 @@
 .hidden{
     overflow: hidden;
     position: absolute;
-    top: 100px;
+    top: 12vh;
     left: 50%;
-    transform: translate(-52%);
+    transform: translate(-50%);
     width: 0px;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.3s;
 }
 
 @media (max-width:768px) {
@@ -89,21 +89,25 @@
 
     .secret{
         position: absolute;
-        top: 100px;
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; */
+        top: 12vh;
         left: 50%;
         transform: translate(-53%);
-        height: 400px;
-        width: 90%;
-        background-color: rgba(254, 141, 89, 1);
+        padding: 2vh;
+        width: 80%;
+        background-color: rgba(254, 141, 89, 0.9);
         border-radius: 10px;
         display: block;
-        transition: ease-in-out 0.5s;
+        /* transition: ease-in-out 0.3s; */
     }
 
     .link{
+        margin: 3vh 0vh;
         background-color: transparent;
         color: white;
-        font-size: 20px;
-        margin-top: 55px;
+        font-size: 2.3vh;
     }
 }

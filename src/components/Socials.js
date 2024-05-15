@@ -24,7 +24,7 @@ function Socials() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="skill-card dotBig"
+        className="skill-card social-card"
         onClick={() => window.open(link)}
       >
         <div className="skill-logo">{icon}</div>
