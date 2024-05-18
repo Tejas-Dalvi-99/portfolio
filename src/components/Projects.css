@@ -5,12 +5,13 @@
     /* border: 2px solid violet; */
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 4vw;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .project-card{
+    color: var(--txt-clr);
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -20,14 +21,14 @@
     margin-top: 30px;
     height: 60vh;
     width: 21vw;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border:1px solid var(--card-border);
     border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    transition: ease-in-out 0.2s;
+    box-shadow: 0 8px 30px 0 var(--card-shadow);
+    transition: ease-in-out 0.25s;
 }
 
 .project-card:hover{
-    box-shadow: 0px 0px 5px #FFE7C5 , 0px 0px 15px #FFE7C5 , 0px 0px 20px #FE8D59 , 0px 0px 100px #FFE7C5;
+    box-shadow:var(--card-shadow-hvr0) , var(--card-shadow-hvr1) , var(--card-shadow-hvr2) , var(--card-shadow-hvr3);
 }
 
 .project-img{

@@ -12,6 +12,7 @@
 }
 
 .skill-card{
+    background-color: var(--skill-card-bg);
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -21,19 +22,20 @@
     padding: 10px 10px;
     height: 10vh;
     width: 15vw;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 var(--card-shadow);
+    border: 2px solid var(--card-border);
     border-radius: 10px;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.1s;
 }
 
 .skill-card:hover{
-    box-shadow: 0px 0px 5px #FFE7C5 , 0px 0px 15px #FFE7C5 , 0px 0px 20px #FE8D59 , 0px 0px 100px #FFE7C5;
+    box-shadow: 0px 0px 5px var(--selection-clr) , 0px 0px 15px var(--selection-clr) , 0px 0px 30px var(--focus-clr) , 0px 0px 50px var(--selection-clr);
 }
 
 .skill-name{
-    color: #4D4637;
+    color: var(--txt-clr);
     font-size: 1.3vw;
-    font-weight: 550;
+    font-weight: 400;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 

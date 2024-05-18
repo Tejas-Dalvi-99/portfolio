@@ -35,7 +35,7 @@ function Skills() {
         icon={<FaAws size={50} color="#FF9900" />}
         name={"Amazon Web Services"}
       />
-      <SkillBox icon={<FaGithub size={50} color="#000" />} name={"Github"} />
+      <SkillBox icon={<FaGithub size={50} color="var(--social-icon-clr)" />} name={"Github"} />
       <SkillBox
         icon={<FaEthereum size={50} color="#A6BEDF" />}
         name={"Ethereum"}
@@ -46,7 +46,7 @@ function Skills() {
         name={"Bootstrap"}
       />
       <SkillBox
-        icon={<FiFramer size={50} color="#000" />}
+        icon={<FiFramer size={50} color="var(--social-icon-clr)" />}
         name={"Framer Motion"}
       />
       <SkillBox

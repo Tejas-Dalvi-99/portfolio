@@ -7,13 +7,13 @@
     border-radius: 50%;
     pointer-events: none;
     z-index: 999;
-    mix-blend-mode:multiply;
+    mix-blend-mode:var(--mode);
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 1px solid rgba(254, 141, 89); */
-    background-color: rgba(254, 141, 89, 0.5);
+    background-color: var(--cursor-bg);
 }
 
 .dot{
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(254, 141, 89, 0.7);
+    background-color: var(--dot-bg);
 }
 
 .cursor-text{

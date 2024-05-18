@@ -20,7 +20,7 @@ function Cursor() {
 
     if (circleBig) {
       gsap.to(cursorRef.current, { scale: 3 });
-      gsap.to(dotRef.current, { scale: 0 });
+      gsap.to(dotRef.current, { scale: 1 });
     }
     if (noCircle) {
       gsap.to(cursorRef.current, { scale: 0 });

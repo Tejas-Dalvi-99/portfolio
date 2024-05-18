@@ -5,10 +5,15 @@
     align-items: center;
     justify-content: center;
     /* border: 2px solid violet; */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 30px 0 var(--card-shadow);
+    border: 2px solid var(--form-border);
     border-radius: 10px;
     flex-direction: column;
     padding: 25px;
+}
+
+.contact h1{
+    color: var(--txt-clr);
 }
 
 .form{
@@ -23,21 +28,24 @@
 }
 
 input{
+    color: var(--txt-clr);
     box-sizing: border-box;
     padding-left: 10px;
     height: 7vh;
     width: 30vw;
     border-radius: 10px;
     outline: none;
-    border: 3px solid #FFE7C5;
+    border: 3px solid var(--form-border);
     transition: ease-in-out 0.5s;
+    background-color: transparent;
 }
 
 input:focus{
-    border: 3px solid #FE8D59;
+    border: 3px solid var(--focus-clr);
 }
 
 .message-box{
+    color: var(--txt-clr);
     box-sizing: border-box;
     padding-top: 10px;
     padding-left: 10px;
@@ -45,13 +53,14 @@ input:focus{
     width: 61vw;
     resize: none;
     border-radius: 10px;
-    border: 3px solid #FFE7C5;
+    border: 3px solid var(--form-border);
     outline: none;
     transition: ease-in-out 0.5s;
+    background-color: transparent;
 }
 
 .message-box:focus{
-    border: 3px solid #FE8D59;
+    border: 3px solid var(--focus-clr);
 }
 
 .btn{
@@ -60,15 +69,15 @@ input:focus{
     border-radius: 10px;
     outline: none;
     background-color: transparent;
-    border: 2px solid #FE8D59;
+    border: 2px solid var(--focus-clr);
     transition: ease-in-out 0.3s;
     font-weight: bold;
-    color: #4D4637;
+    color: var(--txt-clr);
 }
 
 .btn:hover{
-    background-color: #FE8D59;
-    color: white;
+    background-color: var(--focus-clr);
+    color: var(--btn-txt-hover);
 }
 
 @media (max-width:768px) {
@@ -92,7 +101,7 @@ input:focus{
 
     .btn{
         width: 25vw;
-        background-color: #FE8D59;
-        color: white;
+        background-color: var(--focus-clr);
+        color: var(--btn-txt-hover);
     }
 }

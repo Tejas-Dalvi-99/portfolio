@@ -11,9 +11,9 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 function Socials() {
     return (
       <div className="socials">
-        <SocialBox icon={<FaGithub size={50} color="black" />} name={"Github"} link={"https://github.com/Tejas-Dalvi-99"}/>
+        <SocialBox icon={<FaGithub size={50} color="var(--social-icon-clr)" />} name={"Github"} link={"https://github.com/Tejas-Dalvi-99"}/>
         <SocialBox icon={<FaLinkedin size={50} color="#0a66c2" />} name={"Linkedin"} link={"https://linkedin.com/in/tejas-dalvi-3a094a1a4/"}/>
-        <SocialBox icon={<FaSquareXTwitter size={50} color="black" />} name={"Twitter"} link={"https://twitter.com/TejaScript"}/>
+        <SocialBox icon={<FaSquareXTwitter size={50} color="var(--social-icon-clr)" />} name={"Twitter"} link={"https://twitter.com/TejaScript"}/>
       </div>
     );
   }

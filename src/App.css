@@ -1,5 +1,57 @@
-*{
-  background-color: #FFF8EA;
+.dark-mode {
+  --bg-clr: rgb(19, 18, 14);
+  --text-clr: #FFF;
+  --selection-clr: rgba(254, 141, 89, 0.9);
+  --cursor-bg: rgba(254, 141, 89, 0.7);
+  --dot-bg: rgba(254, 141, 89, 0.7);
+  --txt-clr: #FFF8EA;
+  --intro-btn-hovr: rgba(254, 141, 89, 0.9);
+  --focus-clr: #FE8D59;
+  --card-border: rgba(255, 255, 255, 0.18);
+  --card-shadow: rgba(254, 141, 89, 0.3);
+  --card-shadow-hvr0: 0px 0px 5px #FE8D59; ;
+  --card-shadow-hvr1: 0px 0px 10px #FE8D59;
+  --card-shadow-hvr2: 0px 0px 20px rgb(255, 231, 197,0.3) ;
+  --card-shadow-hvr3: 0px 0px 80px #FE8D59;
+  --form-border: rgba(254, 141, 89, 0.5);
+  --skill-card-bg: transparent;
+  --social-icon-clr: rgb(255, 255, 255,0.8);
+  --btn-txt-hover:white;
+  --mode: none;
+  
+  img{
+    filter: brightness(0.8);
+  }
+}
+
+body{
+  transition: all ease-in-out 0.7s;
+}
+
+.light-mode {
+  --bg-clr: #FFF8EA;
+  --text-clr: #000;
+  --selection-clr: #FFE7C5;
+  --form-border: #FFE7C5;
+  --focus-clr: #FE8D59;
+  --btn-txt-hover: white;
+  --txt-clr: #4D4637;
+  --cursor-bg: rgba(254, 141, 89, 0.5);
+  --dot-bg: rgba(254, 141, 89, 0.7);
+  --intro-btn-hovr: rgba(254, 141, 89, 0.9);
+  --card-shadow: rgba(0, 0, 0, 0.37);
+  --card-border: rgba(255, 255, 255, 0.18);
+  --card-shadow-hvr0:  0px 0px 5px  #FE8D59;
+  --card-shadow-hvr1: 0px 0px 15px #FFE7C5;
+  --card-shadow-hvr2: 0px 0px 30px #FFE7C5 ;
+  --card-shadow-hvr3: 0px 0px 40px #FE8D59;
+  --skill-card-bg: transparent;
+  --social-icon-clr: black;
+  --mode: multiply;
+}
+
+body{
+  background-color: var(--bg-clr);
 }
 
 .App {
@@ -22,6 +74,6 @@
 }
 
 *::selection{
-  background-color: #FFE7C5;
+  background-color: var(--selection-clr);
 }
 

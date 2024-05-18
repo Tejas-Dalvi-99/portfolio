@@ -8,7 +8,7 @@
 }
 
 .introduction{
-    color: #4D4637;
+    color: var(--txt-clr);
     height: 60%;
     width: 40%;
 }
@@ -32,14 +32,14 @@
     font-size: 1.3vw;
     border: none;
     padding: 0.6vw 1.5vw;
-    background-color: rgba(254, 141, 89, 0.7);
+    background-color: var(--dot-bg);
     border-radius: 20px;
     transition: ease-in-out 0.1s;
 }
 
 .introduction button:hover{
     cursor: pointer;
-    background-color: rgba(254, 141, 89, 0.9);
+    background-color: var(--intro-btn-hovr);
 }
 
 .coder-image{

@@ -4,10 +4,26 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useNavigate } from "react-router-dom";
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
+
 
 function Navbar() {
+  const [theme, setTheme] = useState("light-mode");
   const [navOpen, setNavOpen] = useState(false);
   const navigateTo = useNavigate();
+
+  function handleTheme(){
+    if(theme === "light-mode"){
+      setTheme("dark-mode");
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    }else{
+      setTheme("light-mode");
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }
+  }
 
   return (
     <div className="nav" id="nav">
@@ -20,6 +36,7 @@ function Navbar() {
         <h1 className="">
           Port<span>folio.</span>
         </h1>
+
       </motion.div>
       <div
         className="nav-btn"
@@ -83,6 +100,10 @@ function Navbar() {
             >
               Contact
             </motion.div>
+            <div className="theme-toggle noCircle" onClick={handleTheme}>
+            { theme ==="dark-mode" ? <MdOutlineLightMode size={25}/> : <MdOutlineDarkMode size={25}/>}
+            </div>
+            
       </div>
 
       <div

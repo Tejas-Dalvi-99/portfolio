@@ -8,17 +8,19 @@
     top: 0;
     left: 0;
     padding: 0px 30px;
-    background-color: #FFF8EA;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
     z-index: 99;
+    transition: all ease-in-out 0.7s;
 }
 
 .logo{
     margin-left: 30px;
-    color: #FE8D59;
+    color: var(--focus-clr);
 }
   
 .logo span{
-    color: #4D4637;
+    color: var(--txt-clr);
 }
 
 .page-links{
@@ -33,12 +35,12 @@
     padding: 5px 20px;
     border-radius: 20px;
     font-weight: 500;
-    color: #4D4637;
+    color: var(--txt-clr);
     transition: 0.3s ease;
 }
 
 .page-links .link:hover{
-    background-color: #FFE7C5;
+    background-color: var(--selection-clr);
     transition: 0.3s ease;
     /* cursor: pointer; */
 }
@@ -62,6 +64,17 @@
     transform: translate(-50%);
     width: 0px;
     transition: ease-in-out 0.3s;
+}
+
+.theme-toggle{
+    color: var(--txt-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-toggle:hover{
+    cursor: pointer;
 }
 
 @media (max-width:768px) {
@@ -98,7 +111,7 @@
         transform: translate(-53%);
         padding: 2vh;
         width: 80%;
-        background-color: rgba(254, 141, 89, 0.9);
+        background-color: var(--intro-btn-hovr);
         border-radius: 10px;
         display: block;
         /* transition: ease-in-out 0.3s; */
@@ -107,7 +120,7 @@
     .link{
         margin: 3vh 0vh;
         background-color: transparent;
-        color: white;
+        color: var(--btn-txt-hover);
         font-size: 2.3vh;
     }
 }
