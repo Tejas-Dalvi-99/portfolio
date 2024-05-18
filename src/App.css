@@ -17,6 +17,9 @@
   --skill-card-bg: transparent;
   --social-icon-clr: rgb(255, 255, 255,0.8);
   --btn-txt-hover:white;
+  --mobile-nav: rgb(19, 18, 14,0.9);
+  --mobile-nav-clr: #fff8ea;
+  --mobile-nav-border: rgba(254, 141, 89, 0.5);
   --mode: none;
   
   img{
@@ -47,6 +50,8 @@ body{
   --card-shadow-hvr3: 0px 0px 40px #FE8D59;
   --skill-card-bg: transparent;
   --social-icon-clr: black;
+  --mobile-nav-clr: white;
+  --mobile-nav: rgba(254, 141, 89, 0.9);
   --mode: multiply;
 }
 

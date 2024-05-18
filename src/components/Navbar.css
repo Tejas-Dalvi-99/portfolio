@@ -96,7 +96,7 @@
 
     .nav-btn{
         position: fixed;
-        right: 5vw;
+        right: 12vw;
         display: block;
     }
 
@@ -111,7 +111,9 @@
         transform: translate(-53%);
         padding: 2vh;
         width: 80%;
-        background-color: var(--intro-btn-hovr);
+        background-color: var(--mobile-nav);
+        z-index: 99;
+        border: 2px solid var(--mobile-nav-border);
         border-radius: 10px;
         display: block;
         /* transition: ease-in-out 0.3s; */
@@ -119,8 +121,7 @@
 
     .link{
         margin: 3vh 0vh;
-        background-color: transparent;
-        color: var(--btn-txt-hover);
+        color: var(--mobile-nav-clr);
         font-size: 2.3vh;
     }
 }

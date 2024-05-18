@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./Navbar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useNavigate } from "react-router-dom";
@@ -9,19 +9,34 @@ import { MdOutlineDarkMode } from "react-icons/md";
 
 
 function Navbar() {
-  const [theme, setTheme] = useState("light-mode");
+  const [theme, setTheme] = useState("");
   const [navOpen, setNavOpen] = useState(false);
   const navigateTo = useNavigate();
+
+  useEffect(()=>{
+    const localTheme = localStorage.getItem("theme");
+    if(localTheme === "light-mode"){
+      setTheme("light-mode");
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }else{
+      setTheme("dark-mode");
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    }
+  },[])
 
   function handleTheme(){
     if(theme === "light-mode"){
       setTheme("dark-mode");
       document.body.classList.add("dark-mode");
       document.body.classList.remove("light-mode");
+      localStorage.setItem("theme", "dark-mode");
     }else{
       setTheme("light-mode");
       document.body.classList.add("light-mode");
       document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light-mode");
     }
   }
 
@@ -84,7 +99,7 @@ function Navbar() {
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeInOut", duration: 2, times: [0.6] }}
+              transition={{ ease: "easeInOut", duration: 2, times: [0.5] }}
               className="link noCircle"
               onClick={()=>navigateTo('/socials')}
             >
@@ -94,15 +109,19 @@ function Navbar() {
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeInOut", duration: 2, times: [0.5] }}
+              transition={{ ease: "easeInOut", duration: 2, times: [0.6] }}
               className="link noCircle"
               onClick={()=>navigateTo('/contact')}
             >
               Contact
             </motion.div>
-            <div className="theme-toggle noCircle" onClick={handleTheme}>
+            <motion.div 
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeInOut", duration: 2, times: [0.7] }}
+            className="theme-toggle noCircle" onClick={handleTheme}>
             { theme ==="dark-mode" ? <MdOutlineLightMode size={25}/> : <MdOutlineDarkMode size={25}/>}
-            </div>
+            </motion.div>
             
       </div>
 
@@ -113,6 +132,9 @@ function Navbar() {
         <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/skills')}}>Skills</div>
         <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/socials')}}>Socials</div>
         <div className="link" onClick={()=>{setNavOpen(false); navigateTo('/contact')}}>Contact</div>
+        <div className="theme-toggle link" onClick={handleTheme}>
+            { theme ==="dark-mode" ? <MdOutlineLightMode size={25}/> : <MdOutlineDarkMode size={25}/>}
+            </div>
       </div>
 
     </div>
