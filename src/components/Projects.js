@@ -15,7 +15,7 @@ import ola from '../Images/ola.jpg'
 function Projects() {
   return (
     <div className="projects">
-      <ProjectCard name={"Haldiram UI Re-Imagine"} img={Haldiram} link={"https://angularbrackets2.netlify.app/"} description={"Recreated the Haldirams website with a new feel and great animatinos. It was A group project where I was the developer"}/>
+      <ProjectCard name={"Haldiram UI Re-Imagine"} img={Haldiram} link={"https://angularbrackets2.netlify.app/"} description={"Recreated the Haldirams website with a new feel and great animations. It was A group project where I was the developer"}/>
       <ProjectCard name={"PartSign"} img={Partsign} link={"https://partsign.netlify.app/"} description={"This project solves the problem of computer parts scalping by using the sign protocol attestation service."}/>
       <ProjectCard name={"Gho-Eco"} img={ghoEco} link={"http://ghoeco.netlify.app/"} description={"Gho-Eco is a platform where we invite organizations from across the globe to showcase their eco-friendly initiatives. The best entries get rewarded with GHO Tokens as an appreciation"}/>
       <ProjectCard name={"Certificates Page"} img={certificate} link={"https://tejascertificates.netlify.app/"} description={"A full stack application where all of my certificates are displayed. Created an API from where i can upload new certificates. The certificates are stored in mongodb in base64 format and are fetched from the api and displayed on frontend"}/>
