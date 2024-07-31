@@ -9,8 +9,8 @@ import complaint from '../Images/complaint chain.png'
 import research from '../Images/research tool.png'
 import ghoEco from '../Images/gho eco cover image.png'
 import Partsign from '../Images/partsign1.png'
-import Haldiram from '../Images/haldiram.png'
-import ola from '../Images/ola.png'
+import Haldiram from '../Images/haldiram.jpg'
+import ola from '../Images/ola.jpg'
 
 function Projects() {
   return (
