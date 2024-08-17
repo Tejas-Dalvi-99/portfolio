@@ -1,5 +1,5 @@
 .socials{
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -7,6 +7,10 @@
 
 .social-card:hover{
     cursor: pointer;
+}
+
+#darshan{
+    font-size: 10vh;
 }
 
 @media (max-width:768px){

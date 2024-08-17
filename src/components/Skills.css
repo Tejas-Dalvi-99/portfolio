@@ -20,7 +20,7 @@
     box-sizing: border-box;
     align-items: center;
     padding: 10px 10px;
-    height: 10vh;
+    /* height: 10vh; */
     width: 15vw;
     box-shadow: 0 8px 32px 0 var(--card-shadow);
     border: 2px solid var(--card-border);
