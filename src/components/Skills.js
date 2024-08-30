@@ -16,6 +16,9 @@ import { SiGreensock } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FiFramer } from "react-icons/fi";
 import { SiTailwindcss } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 
 function Skills() {
   return (
@@ -27,19 +30,17 @@ function Skills() {
         icon={<IoLogoJavascript size={50} color="#F0DB4F" />}
         name={"Javascript"}
       />
-      <SkillBox
-        icon={<SiSolidity size={50} color="#8C8C8C" />}
-        name={"Solidity"}
+          <SkillBox
+        icon={<SiRedux size={50} color="#563d7c" />}
+        name={"Redux"}
       />
+    
       <SkillBox
         icon={<FaAws size={50} color="#FF9900" />}
         name={"Amazon Web Services"}
       />
       <SkillBox icon={<FaGithub size={50} color="var(--social-icon-clr)" />} name={"Github"} />
-      <SkillBox
-        icon={<FaEthereum size={50} color="#A6BEDF" />}
-        name={"Ethereum"}
-      />
+  
       <SkillBox icon={<SiMui size={50} color="#1769aa" />} name={"MUI"} />
       <SkillBox
         icon={<FaBootstrap size={50} color="#563d7c" />}
@@ -56,6 +57,25 @@ function Skills() {
       <SkillBox
         icon={<SiTailwindcss size={50} color="#06B6D4" />}
         name={"Tailwind CSS"}
+      />
+      <SkillBox
+        icon={<FaNodeJs size={50} color="#00A300" />}
+        name={"NodeJs"}
+      />
+      <SkillBox
+        icon={<SiExpress size={50} color="#F0DB4F" />}
+        name={"expressJs"}
+      />
+
+  
+
+<SkillBox
+        icon={<SiSolidity size={50} color="#8C8C8C" />}
+        name={"Solidity"}
+      />
+          <SkillBox
+        icon={<FaEthereum size={50} color="#A6BEDF" />}
+        name={"Ethereum"}
       />
     </div>
   );

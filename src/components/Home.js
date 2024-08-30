@@ -17,7 +17,7 @@ function Home() {
           A frontend developer who works with ReactJs and also curious about
           blockchain technology!
         </p>
-        <button onClick={()=>window.open("https://drive.google.com/file/d/173otDm0PSv6wD-oEeZI_grmjZecG8O8s/view?usp=sharing")}>Resume</button>
+        <button onClick={()=>window.open("https://drive.google.com/file/d/1TCK-M-XG4e1Y6UT23i0IUIN_GhfrEraz/view?usp=sharing")}>Resume</button>
       </motion.div>
 
       <motion.div

@@ -11,12 +11,14 @@ import ghoEco from '../Images/gho eco cover image.png'
 import Partsign from '../Images/partsign1.png'
 import Haldiram from '../Images/haldiram.jpg'
 import ola from '../Images/ola.jpg'
+import socketchat from '../Images/socketchat.jpg'
 
 function Projects() {
   return (
     <div className="projects">
       <ProjectCard name={"Haldiram UI Re-Imagine"} img={Haldiram} link={"https://angularbrackets2.netlify.app/"} description={"Recreated the Haldirams website with a new feel and great animations. It was A group project where I was the developer"}/>
       <ProjectCard name={"PartSign"} img={Partsign} link={"https://partsign.netlify.app/"} description={"This project solves the problem of computer parts scalping by using the sign protocol attestation service."}/>
+      <ProjectCard name={"Real Time Chat"} img={socketchat} link={"https://chat.tejasdalvi.site/"} description={"This project uses socket.io to connect multiple users and chat in real time. also shows notifications for new user connected or disconnected."}/>
       <ProjectCard name={"Gho-Eco"} img={ghoEco} link={"http://ghoeco.netlify.app/"} description={"Gho-Eco is a platform where we invite organizations from across the globe to showcase their eco-friendly initiatives. The best entries get rewarded with GHO Tokens as an appreciation"}/>
       <ProjectCard name={"Certificates Page"} img={certificate} link={"https://tejascertificates.netlify.app/"} description={"A full stack application where all of my certificates are displayed. Created an API from where i can upload new certificates. The certificates are stored in mongodb in base64 format and are fetched from the api and displayed on frontend"}/>
       <ProjectCard name={"Complaint Chain"} img={complaint} link={"http://complaintchain.tech/"} description={"Blockchain based Anonymous Complaining app where users can send complaints anonymously. The complaints are viewed by the respective authorities on the admin page. The admins can login through NFT Gating mechanism to access the admin page. (Note:- please install metamask wallet browser extension before using the project)"}/>
