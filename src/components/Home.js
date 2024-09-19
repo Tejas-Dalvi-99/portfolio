@@ -14,7 +14,7 @@ function Home() {
       >
         <h1 className="circleBig">Hey, I am Tejas</h1>
         <p className="circleBig">
-          A frontend developer proficient in ReactJs.
+          A frontend developer proficient in ReactJs and also interested in trending technologoes.
         </p>
         <button onClick={()=>window.open("https://drive.google.com/file/d/1k-ttCYJNbcrCWxlnaWyX9GQI9gkW4q6g/view?usp=sharing")}>Resume</button>
       </motion.div>
