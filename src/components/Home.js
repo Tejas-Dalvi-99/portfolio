@@ -14,10 +14,9 @@ function Home() {
       >
         <h1 className="circleBig">Hey, I am Tejas</h1>
         <p className="circleBig">
-          A frontend developer who works with ReactJs and also curious about
-          blockchain technology!
+          A frontend developer proficient in ReactJs.
         </p>
-        <button onClick={()=>window.open("https://drive.google.com/file/d/1TCK-M-XG4e1Y6UT23i0IUIN_GhfrEraz/view?usp=sharing")}>Resume</button>
+        <button onClick={()=>window.open("https://drive.google.com/file/d/1k-ttCYJNbcrCWxlnaWyX9GQI9gkW4q6g/view?usp=sharing")}>Resume</button>
       </motion.div>
 
       <motion.div
