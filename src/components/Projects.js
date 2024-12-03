@@ -21,7 +21,7 @@ function Projects() {
       <ProjectCard name={"Real Time Chat"} img={socketchat} link={"https://chat.tejasdalvi.site/"} description={"This project uses socket.io to connect multiple users and chat in real time. also shows notifications for new user connected or disconnected."}/>
       <ProjectCard name={"Gho-Eco"} img={ghoEco} link={"http://ghoeco.netlify.app/"} description={"Gho-Eco is a platform where we invite organizations from across the globe to showcase their eco-friendly initiatives. The best entries get rewarded with GHO Tokens as an appreciation"}/>
       <ProjectCard name={"Certificates Page"} img={certificate} link={"https://tejascertificates.netlify.app/"} description={"A full stack application where all of my certificates are displayed. Created an API from where i can upload new certificates. The certificates are stored in mongodb in base64 format and are fetched from the api and displayed on frontend"}/>
-      <ProjectCard name={"Complaint Chain"} img={complaint} link={"http://complaintchain.tech/"} description={"Blockchain based Anonymous Complaining app where users can send complaints anonymously. The complaints are viewed by the respective authorities on the admin page. The admins can login through NFT Gating mechanism to access the admin page. (Note:- please install metamask wallet browser extension before using the project)"}/>
+      <ProjectCard name={"Complaint Chain"} img={complaint} link={""} description={"Blockchain based Anonymous Complaining app where users can send complaints anonymously. The complaints are viewed by the respective authorities on the admin page. The admins can login through NFT Gating mechanism to access the admin page. (Note:- please install metamask wallet browser extension before using the project)"}/>
       <ProjectCard name={"Ola UI Re-Imagine"} img={ola} link={"https://angularbrackets.netlify.app/"} description={"Recreated the OLA Cabs website with a new feel. It was A group project where I was the developer"}/>
       <ProjectCard name={"Cheemdiya List"} img={todo} link={"https://cheemdiyalist.netlify.app/"} description={"A To-Do list app"}/>
       <ProjectCard name={"BlueSky Donation"} img={donation} link={"https://cheemdiya.netlify.app/"} description={"Blockchain based platform for NGOs to receive donations in the form of cryptocurrency. The list of donors is displayed on the home page so that others get motivated. (Note:- please install metamask wallet browser extension before using the project)"}/>
@@ -39,7 +39,7 @@ function ProjectCard({name , description , link , img}){
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
         className="project-card dotBig"
-        onClick={()=>{window.open(link)}}
+        onClick={()=>{link && window.open(link)}}
       >
         <div className="project-img">
           <img src={img} alt=""></img>
